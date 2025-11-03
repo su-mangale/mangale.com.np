@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubeastronaut - Platform Engineering</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', 'Consolas', monospace;
+            background-color: #f5f5f5;
+            color: #2d2d2d;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border: 2px solid #333;
+            padding: 20px;
+            box-shadow: 5px 5px 0px #333;
+        }
+
+        .prompt {
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        .command {
+            color: #cc0000;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #0066cc;
+        }
+
+        h2::before {
+            content: "$ ";
+            color: #cc0000;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fafafa;
+            border-left: 4px solid #0066cc;
+        }
+
+        .ascii-art {
+            white-space: pre;
+            font-size: 0.7em;
+            line-height: 1.2;
+            color: #0066cc;
+            margin: 15px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        ul li::before {
+            content: "▸ ";
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            border-bottom: 1px dotted #0066cc;
+        }
+
+        a:hover {
+            background-color: #0066cc;
+            color: #ffffff;
+            border-bottom: 1px solid #0066cc;
+        }
+
+        .tech-tag {
+            display: inline-block;
+            background-color: #e0e0e0;
+            padding: 3px 8px;
+            margin: 3px;
+            border: 1px solid #999;
+            font-size: 0.85em;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 2px dashed #999;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .status-line {
+            background-color: #333;
+            color: #ffffff;
+            padding: 8px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+
+        .status-ok {
+            color: #00ff00;
+        }
+
+        code {
+            background-color: #e8e8e8;
+            padding: 2px 6px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="status-line">
+            [<span class="status-ok">ONLINE</span>] kubernetes-master:~ | pods: <span class="status-ok">running</span> | uptime: 1337 days
+        </div>
+
+        <div class="ascii-art">
+     _  __     _                    _                                  _   
+    | |/ /    | |                  | |                                | |  
+    | ' /_   _| |__   ___  __ _ ___| |_ _ __ ___  _ __   __ _ _   _| |_ 
+    |  <| | | | '_ \ / _ \/ _` / __| __| '__/ _ \| '_ \ / _` | | | | __|
+    | . \ |_| | |_) |  __/ (_| \__ \ |_| | | (_) | | | | (_| | |_| | |_ 
+    |_|\_\__,_|_.__/ \___|\__,_|___/\__|_|  \___/|_| |_|\__,_|\__,_|\__|
+        </div>
+
+        <h1>whoami</h1>
+        <div class="section">
+            <p><span class="prompt">$</span> Platform Engineer | Cloud Native Enthusiast | Kubeastronaut</p>
+            <p>Navigating the cloud-native galaxy, orchestrating containers, and engineering platforms that scale to infinity and beyond! 🚀</p>
+        </div>
+
+        <h2>cat /etc/skills.conf</h2>
+        <div class="section">
+            <p><strong>Kubernetes & Container Orchestration:</strong></p>
+            <ul>
+                <li>Kubernetes cluster design & management</li>
+                <li>Docker & containerization</li>
+                <li>Helm charts & package management</li>
+                <li>Service mesh (Istio, Linkerd)</li>
+            </ul>
+            
+            <p style="margin-top: 15px;"><strong>Platform Engineering:</strong></p>
+            <ul>
+                <li>CI/CD pipelines (GitLab CI, GitHub Actions, Jenkins)</li>
+                <li>Infrastructure as Code (Terraform, Ansible)</li>
+                <li>Observability & monitoring (Prometheus, Grafana)</li>
+                <li>GitOps workflows (ArgoCD, Flux)</li>
+            </ul>
+
+            <p style="margin-top: 15px;"><strong>Cloud Platforms:</strong></p>
+            <ul>
+                <li>AWS, GCP, Azure</li>
+                <li>Cloud-native architecture patterns</li>
+                <li>Multi-cloud strategies</li>
+            </ul>
+        </div>
+
+        <h2>ls -la /projects/</h2>
+        <div class="section">
+            <p><strong>Platform Engineering Initiatives:</strong></p>
+            <ul>
+                <li>Built self-service developer platforms using Kubernetes</li>
+                <li>Designed multi-tenant cluster architectures</li>
+                <li>Implemented GitOps-based deployment workflows</li>
+                <li>Created automated CI/CD pipelines for microservices</li>
+                <li>Developed custom Kubernetes operators</li>
+            </ul>
+        </div>
+
+        <h2>kubectl get certifications</h2>
+        <div class="section">
+            <div>
+                <span class="tech-tag">CKA</span>
+                <span class="tech-tag">CKAD</span>
+                <span class="tech-tag">CKS</span>
+                <span class="tech-tag">AWS Certified</span>
+                <span class="tech-tag">Terraform Associate</span>
+            </div>
+        </div>
+
+        <h2>grep -i 'passion' /var/log/career.log</h2>
+        <div class="section">
+            <p>💙 Passionate about building robust, scalable platforms</p>
+            <p>🔧 Love automating everything that can be automated</p>
+            <p>📚 Continuous learner in the cloud-native ecosystem</p>
+            <p>🌟 Believer in open-source and community collaboration</p>
+            <p>🐧 Linux enthusiast since the beginning</p>
+        </div>
+
+        <h2>cat /var/spool/mail/contact</h2>
+        <div class="section">
+            <p><span class="prompt">$</span> echo "Let's connect!"</p>
+            <p>
+                <code>git clone https://github.com/[username]</code><br>
+                <code>kubectl apply -f linkedin.yaml</code><br>
+                <code>curl -X POST https://twitter.com/[handle]</code>
+            </p>
+        </div>
+
+        <div class="footer">
+            <p><span class="prompt">root@kubeastronaut:~#</span> <span class="command">uptime</span></p>
+            <p>Built with 💙 for the cloud-native community</p>
+            <p>© 2024 Kubeastronaut | Licensed under MIT</p>
+        </div>
+    </div>
+</body>
+</html>
