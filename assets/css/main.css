@@ -55,6 +55,17 @@ a {
     box-shadow: 0 12px 24px -24px rgba(15, 23, 42, 0.4);
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.header-actions .btn {
+    white-space: nowrap;
+}
+
 .branding {
     display: flex;
     align-items: center;
@@ -168,6 +179,11 @@ section header {
     color: var(--color-subtle);
 }
 
+.section-body {
+    color: var(--color-muted);
+    max-width: 640px;
+}
+
 h1 {
     font-size: clamp(2.4rem, 4vw, 3.2rem);
     line-height: 1.2;
@@ -204,6 +220,26 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+}
+
+.achievements .achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.achievements article {
+    background: var(--color-surface);
+    border-radius: var(--radius-base);
+    padding: 24px;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-card);
+    display: grid;
+    gap: 10px;
+}
+
+.achievements p {
+    color: var(--color-muted);
 }
 
 .highlights .stat-grid {
@@ -416,6 +452,11 @@ h3 {
 
     .header {
         flex-wrap: wrap;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: flex-start;
     }
 
     .footer {
