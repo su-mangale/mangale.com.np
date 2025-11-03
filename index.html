@@ -3,229 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kubeastronaut - Platform Engineering</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Courier New', 'Consolas', monospace;
-            background-color: #f5f5f5;
-            color: #2d2d2d;
-            line-height: 1.6;
-            padding: 20px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .container {
-            background-color: #ffffff;
-            border: 2px solid #333;
-            padding: 20px;
-            box-shadow: 5px 5px 0px #333;
-        }
-
-        .prompt {
-            color: #0066cc;
-            font-weight: bold;
-        }
-
-        .command {
-            color: #cc0000;
-        }
-
-        h1 {
-            font-size: 1.8em;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 1.4em;
-            margin-top: 25px;
-            margin-bottom: 10px;
-            color: #0066cc;
-        }
-
-        h2::before {
-            content: "$ ";
-            color: #cc0000;
-        }
-
-        .section {
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #fafafa;
-            border-left: 4px solid #0066cc;
-        }
-
-        .ascii-art {
-            white-space: pre;
-            font-size: 0.7em;
-            line-height: 1.2;
-            color: #0066cc;
-            margin: 15px 0;
-        }
-
-        ul {
-            list-style: none;
-            padding-left: 20px;
-        }
-
-        ul li::before {
-            content: "▸ ";
-            color: #0066cc;
-            font-weight: bold;
-        }
-
-        a {
-            color: #0066cc;
-            text-decoration: none;
-            border-bottom: 1px dotted #0066cc;
-        }
-
-        a:hover {
-            background-color: #0066cc;
-            color: #ffffff;
-            border-bottom: 1px solid #0066cc;
-        }
-
-        .tech-tag {
-            display: inline-block;
-            background-color: #e0e0e0;
-            padding: 3px 8px;
-            margin: 3px;
-            border: 1px solid #999;
-            font-size: 0.85em;
-        }
-
-        .footer {
-            margin-top: 30px;
-            padding-top: 15px;
-            border-top: 2px dashed #999;
-            text-align: center;
-            font-size: 0.9em;
-            color: #666;
-        }
-
-        .status-line {
-            background-color: #333;
-            color: #ffffff;
-            padding: 8px;
-            margin-bottom: 20px;
-            font-size: 0.9em;
-        }
-
-        .status-ok {
-            color: #00ff00;
-        }
-
-        code {
-            background-color: #e8e8e8;
-            padding: 2px 6px;
-            border: 1px solid #ccc;
-        }
-    </style>
+    <title>Mangal Lopchan · Platform Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <div class="container">
-        <div class="status-line">
-            [<span class="status-ok">ONLINE</span>] kubernetes-master:~ | pods: <span class="status-ok">running</span> | uptime: 1337 days
-        </div>
-
-        <div class="ascii-art" role="img" aria-label="Kubeastronaut ASCII art logo">
-     _  __     _                    _                                  _   
-    | |/ /    | |                  | |                                | |  
-    | ' /_   _| |__   ___  __ _ ___| |_ _ __ ___  _ __   __ _ _   _| |_ 
-    |  <| | | | '_ \ / _ \/ _` / __| __| '__/ _ \| '_ \ / _` | | | | __|
-    | . \ |_| | |_) |  __/ (_| \__ \ |_| | | (_) | | | | (_| | |_| | |_ 
-    |_|\_\__,_|_.__/ \___|\__,_|___/\__|_|  \___/|_| |_|\__,_|\__,_|\__|
-        </div>
-
-        <h1>whoami</h1>
-        <div class="section">
-            <p><span class="prompt">$</span> Platform Engineer | Cloud Native Enthusiast | Kubeastronaut</p>
-            <p>Navigating the cloud-native galaxy, orchestrating containers, and engineering platforms that scale to infinity and beyond! 🚀</p>
-        </div>
-
-        <h2>cat /etc/skills.conf</h2>
-        <div class="section">
-            <p><strong>Kubernetes & Container Orchestration:</strong></p>
-            <ul>
-                <li>Kubernetes cluster design & management</li>
-                <li>Docker & containerization</li>
-                <li>Helm charts & package management</li>
-                <li>Service mesh (Istio, Linkerd)</li>
-            </ul>
-            
-            <p style="margin-top: 15px;"><strong>Platform Engineering:</strong></p>
-            <ul>
-                <li>CI/CD pipelines (GitLab CI, GitHub Actions, Jenkins)</li>
-                <li>Infrastructure as Code (Terraform, Ansible)</li>
-                <li>Observability & monitoring (Prometheus, Grafana)</li>
-                <li>GitOps workflows (ArgoCD, Flux)</li>
-            </ul>
-
-            <p style="margin-top: 15px;"><strong>Cloud Platforms:</strong></p>
-            <ul>
-                <li>AWS, GCP, Azure</li>
-                <li>Cloud-native architecture patterns</li>
-                <li>Multi-cloud strategies</li>
-            </ul>
-        </div>
-
-        <h2>ls -la /projects/</h2>
-        <div class="section">
-            <p><strong>Platform Engineering Initiatives:</strong></p>
-            <ul>
-                <li>Built self-service developer platforms using Kubernetes</li>
-                <li>Designed multi-tenant cluster architectures</li>
-                <li>Implemented GitOps-based deployment workflows</li>
-                <li>Created automated CI/CD pipelines for microservices</li>
-                <li>Developed custom Kubernetes operators</li>
-            </ul>
-        </div>
-
-        <h2>kubectl get certifications</h2>
-        <div class="section">
+    <header class="header" id="top">
+        <div class="branding">
+            <span class="logo-dot"></span>
             <div>
-                <span class="tech-tag">KCNA</span>
-                <span class="tech-tag">KCSA</span>
-                <span class="tech-tag">CKA</span>
-                <span class="tech-tag">CKAD</span>
-                <span class="tech-tag">CKS</span>
-                <span class="tech-tag">RHCSA</span>
-                <span class="tech-tag">RHCE</span>
+                <p class="label">Mangal Lopchan</p>
+                <p class="sub-label">Platform Engineer</p>
             </div>
         </div>
+        <nav aria-label="primary navigation">
+            <a href="#about">About</a>
+            <a href="#highlights">Highlights</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a class="btn" href="mailto:contact@mangale.com.np">Let’s talk</a>
+    </header>
 
-        <h2>grep -i 'passion' /var/log/career.log</h2>
-        <div class="section">
-            <p>💙 Passionate about building robust, scalable platforms</p>
-            <p>🔧 Love automating everything that can be automated</p>
-            <p>📚 Continuous learner in the cloud-native ecosystem</p>
-            <p>🌟 Believer in open-source and community collaboration</p>
-            <p>🐧 Linux enthusiast since the beginning</p>
-        </div>
+    <main>
+        <section class="hero" id="about">
+            <p class="hero-eyebrow">Platform impact without the noise</p>
+            <h1>Helping product teams ship fast on platforms that stay reliable.</h1>
+            <p class="hero-body">I lead platform engineering initiatives that blend automation, observability, and pragmatic DevOps practices. The result: quieter on-call shifts and happier feature teams.</p>
+            <div class="hero-actions">
+                <a class="btn primary" href="#projects">See projects</a>
+                <a class="btn ghost" href="#contact">View availability</a>
+            </div>
+        </section>
 
-        <h2>cat /var/spool/mail/contact</h2>
-        <div class="section">
-            <p><span class="prompt">$</span> echo "Let's connect!"</p>
-            <p>
-                <code>git clone https://github.com/su-mangale</code><br>
-                <code>kubectl apply -f <a href="https://www.linkedin.com/in/mangal-lopchan/" target="_blank">linkedin.yaml</a></code>
-            </p>
-        </div>
+        <section class="highlights" id="highlights">
+            <header>
+                <p class="section-eyebrow">Highlights</p>
+                <h2>Outcomes I’m proud of</h2>
+            </header>
+            <div class="stat-grid">
+                <article>
+                    <p class="stat">48</p>
+                    <p class="caption">Average production deploys per day supported across squads.</p>
+                </article>
+                <article>
+                    <p class="stat">59%</p>
+                    <p class="caption">Reduction in incident volume after rolling out unified observability.</p>
+                </article>
+                <article>
+                    <p class="stat"><span>12</span>→<span>2</span> hr</p>
+                    <p class="caption">Shrinkage in change lead time through templated pipelines.</p>
+                </article>
+                <article>
+                    <p class="stat">72%</p>
+                    <p class="caption">Automated remediation coverage for top Sev2 scenarios.</p>
+                </article>
+            </div>
+        </section>
 
-        <div class="footer">
-            <p><span class="prompt">root@kubeastronaut:~#</span> <span class="command">uptime</span></p>
-            <p>Built with 💙 for the cloud-native community</p>
-            <p>© 2024 Kubeastronaut | Licensed under MIT</p>
-        </div>
-    </div>
+        <section class="projects" id="projects">
+            <header>
+                <p class="section-eyebrow">Projects</p>
+                <h2>Selected platform builds</h2>
+                <p class="section-body">Each engagement tuned for measurable productivity gains and reliability.</p>
+            </header>
+            <div class="project-grid">
+                <article>
+                    <h3>Composable Developer Platform</h3>
+                    <p class="meta">FinEdge · 2024</p>
+                    <p>Delivered a golden-path developer experience powered by Backstage and GitOps automation. Reduced onboarding time from 3 weeks to 3 days.</p>
+                    <ul>
+                        <li>Service templates with guardrails</li>
+                        <li>Policy-as-code change approval</li>
+                        <li>Progressive delivery baked in</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Telemetry Operating Model</h3>
+                    <p class="meta">TechScale · 2023</p>
+                    <p>Rolled out unified metrics, tracing, and logging for 200 services with actionable SLO dashboards and weekly reliability reviews.</p>
+                    <ul>
+                        <li>OpenTelemetry standardization</li>
+                        <li>Grafana playlists for exec visibility</li>
+                        <li>On-call playbooks tied to alerts</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Compliance Automation Pipeline</h3>
+                    <p class="meta">CloudWorks · 2022</p>
+                    <p>Instrumented evidence collection and runtime checks to keep regulated workloads audit-ready without blocking releases.</p>
+                    <ul>
+                        <li>Infrastructure scoring dashboard</li>
+                        <li>Automated drift remediation</li>
+                        <li>Live compliance reports for auditors</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="impact" id="impact">
+            <header>
+                <p class="section-eyebrow">Approach</p>
+                <h2>How I work with platform teams</h2>
+            </header>
+            <div class="impact-grid">
+                <article>
+                    <h3>1. Align on outcomes</h3>
+                    <p>Start with the developer experience metrics that matter—lead time, MTTR, feedback loops—and design around them.</p>
+                </article>
+                <article>
+                    <h3>2. Ship iteratively</h3>
+                    <p>Introduce lightweight platform capabilities in weeks, not months, with feedback from partner teams baked in.</p>
+                </article>
+                <article>
+                    <h3>3. Scale responsibly</h3>
+                    <p>Build in guardrails, documentation, and enablement programs so capabilities are adopted sustainably.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="experience" id="experience">
+            <header>
+                <p class="section-eyebrow">Experience</p>
+                <h2>Recent roles</h2>
+            </header>
+            <ol class="timeline">
+                <li>
+                    <div class="time">2024 — Present</div>
+                    <div class="details">
+                        <h3>Principal Platform Engineer · FinEdge</h3>
+                        <p>Leading platform strategy across 30 squads, focusing on developer self-service and production resiliency.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="time">2021 — 2024</div>
+                    <div class="details">
+                        <h3>Platform Lead · TechScale</h3>
+                        <p>Scaled Kubernetes foundation to 1,200 services, formalized SLO adoption, and automated release governance.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="time">2018 — 2021</div>
+                    <div class="details">
+                        <h3>Senior DevOps Engineer · CloudWorks</h3>
+                        <p>Built multi-cloud landing zones and introduced infrastructure-as-code standards adopted company-wide.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section class="skills" id="skills">
+            <header>
+                <p class="section-eyebrow">Toolkit</p>
+                <h2>Focused skill areas</h2>
+            </header>
+            <div class="skill-grid">
+                <ul>
+                    <li>Internal Developer Platforms</li>
+                    <li>GitOps & Release Engineering</li>
+                    <li>Observability & SLOs</li>
+                </ul>
+                <ul>
+                    <li>Infrastructure as Code</li>
+                    <li>Cloud Architecture (AWS/GCP/Azure)</li>
+                    <li>Incident Response Enablement</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <header>
+                <p class="section-eyebrow">Contact</p>
+                <h2>Let’s move your platform forward</h2>
+                <p class="section-body">Best suited for teams looking to accelerate delivery while improving reliability and compliance.</p>
+            </header>
+            <div class="contact-grid">
+                <article>
+                    <h3>Availability</h3>
+                    <p>Booking fractional leadership and advisory engagements for Q1 2026.</p>
+                    <a class="btn ghost" href="mailto:contact@mangale.com.np">Start a conversation</a>
+                </article>
+                <article>
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/mangal-lopchan/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://github.com/su-mangale" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="current-year"></span> Mangal Lopchan. Built for clarity and momentum.</p>
+        <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>
