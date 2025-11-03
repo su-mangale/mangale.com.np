@@ -242,6 +242,21 @@ h3 {
     color: var(--color-muted);
 }
 
+.achievements ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 4px 0 0;
+    display: grid;
+    gap: 6px;
+    color: var(--color-muted);
+    font-size: 0.95rem;
+}
+
+.achievements .btn {
+    margin-top: 12px;
+    width: fit-content;
+}
+
 .highlights .stat-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
