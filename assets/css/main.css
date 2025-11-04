@@ -242,7 +242,7 @@ h3 {
     color: var(--color-muted);
 }
 
-.achievements ul:not(.cert-circle-list) {
+.achievements ul {
     list-style: disc;
     padding-left: 20px;
     margin: 4px 0 0;
@@ -255,46 +255,6 @@ h3 {
 .achievements .btn {
     margin-top: 12px;
     width: fit-content;
-}
-
-.cert-circle-list {
-    list-style: none;
-    padding: 0;
-    margin: 16px 0 0;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.cert-circle-list li {
-    display: flex;
-    align-items: center;
-}
-
-.cert-circle {
-    display: block;
-    border-radius: 12px;
-    overflow: hidden;
-    text-decoration: none;
-    transition: transform 200ms ease, box-shadow 200ms ease;
-}
-
-.cert-circle:hover,
-.cert-circle:focus-visible {
-    transform: translateY(-6px) scale(1.05);
-    box-shadow: 0 22px 44px -24px rgba(43, 89, 255, 0.35);
-}
-
-.cert-circle:focus-visible {
-    outline: 3px solid rgba(43, 89, 255, 0.32);
-    outline-offset: 4px;
-}
-
-.cert-circle img {
-    display: block;
-    width: 120px;
-    height: auto;
 }
 
 .achievement-cta {
