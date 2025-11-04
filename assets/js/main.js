@@ -4,6 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
         yearEl.textContent = new Date().getFullYear();
     }
 
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', () => {
+            window.setTimeout(() => contactForm.reset(), 200);
+        });
+    }
+
+    const backToTop = document.querySelector('.back-to-top');
+    if (backToTop) {
+        backToTop.addEventListener('click', (event) => {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
     const header = document.querySelector('.header');
     if (!header) return;
 

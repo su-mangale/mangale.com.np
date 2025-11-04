@@ -28,7 +28,6 @@
         </nav>
         <div class="header-actions">
             <a class="btn ghost" href="assets/mangale-lopchan.pdf" download>Download resume</a>
-            <a class="btn" href="mailto:lopchanmangal5@gmail.com">Let’s talk</a>
         </div>
     </header>
 
@@ -202,17 +201,31 @@
                 <p class="section-body">Best suited for teams looking to accelerate delivery while improving reliability and compliance.</p>
             </header>
             <div class="contact-grid">
-                <article>
-                    <h3>Availability</h3>
-                    <p>Booking fractional leadership and advisory engagements for Q1 2026.</p>
-                    <a class="btn ghost" href="mailto:lopchanmangal5@gmail.com">Start a conversation</a>
-                </article>
-                <article>
-                    <h3>Connect</h3>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/mangal-lopchan/" target="_blank" rel="noopener">LinkedIn</a></li>
-                        <li><a href="https://github.com/su-mangale" target="_blank" rel="noopener">GitHub</a></li>
-                    </ul>
+                <article class="contact-form-card contact-form-card--primary">
+                    <h3>Start a conversation</h3>
+                    <p class="contact-note">Booking fractional leadership and advisory engagements for Q1 2026. Share a bit about your platform goals and I’ll reply within two business days.</p>
+                    <form class="contact-form" action="https://formspree.io/f/xovpopje" method="POST">
+                        <input type="hidden" name="form_purpose" value="Project conversation">
+                        <label>
+                            <span>Your name</span>
+                            <input type="text" name="name" autocomplete="name" required>
+                        </label>
+                        <label>
+                            <span>Work email</span>
+                            <input type="email" name="email" autocomplete="email" required>
+                        </label>
+                        <label>
+                            <span>Company or team</span>
+                            <input type="text" name="company" autocomplete="organization">
+                        </label>
+                        <label>
+                            <span>How can I help?</span>
+                            <textarea name="message" rows="6" placeholder="Outline your platform challenge, timeline, or success metrics." required></textarea>
+                        </label>
+                        <div class="form-footer">
+                            <button class="btn primary" type="submit">Send message</button>
+                        </div>
+                    </form>
                 </article>
             </div>
         </section>
@@ -220,7 +233,7 @@
 
     <footer class="footer">
     <p>© <span id="current-year"></span> Mangale Lopchan. Built for clarity and momentum.</p>
-        <a href="#top">Back to top</a>
+        <a class="back-to-top" href="#top">Back to top</a>
     </footer>
 
     <script src="assets/js/main.js" defer></script>
