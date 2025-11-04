@@ -88,37 +88,37 @@
             <header>
                 <p class="section-eyebrow">Projects</p>
                 <h2>Selected platform builds</h2>
-                <p class="section-body">Each engagement tuned for measurable productivity gains and reliability.</p>
+                <p class="section-body">Open-source pieces that showcase how I approach full-stack delivery, API craft, and GitOps operations.</p>
             </header>
             <div class="project-grid">
                 <article>
-                    <h3>Composable Developer Platform</h3>
-                    <p class="meta">FinEdge · 2024</p>
-                    <p>Delivered a golden-path developer experience powered by Backstage and GitOps automation. Reduced onboarding time from 3 weeks to 3 days.</p>
+                    <h3>GitOps with FluxCD</h3>
+                    <p class="meta"><a href="https://github.com/su-mangale/fluxcd" target="_blank" rel="noopener">github.com/su-mangale/fluxcd</a></p>
+                    <p>GitOps reference architecture using FluxCD with clear separation of apps, infrastructure, and environment overlays.</p>
                     <ul>
-                        <li>Service templates with guardrails</li>
-                        <li>Policy-as-code change approval</li>
-                        <li>Progressive delivery baked in</li>
+                        <li>Structured Kustomizations for clusters plus HelmRelease definitions per workload.</li>
+                        <li>Production overlays manage secrets, patches, and environment-specific config.</li>
+                        <li>README walkthrough covers onboarding, source registration, and verification commands.</li>
                     </ul>
                 </article>
                 <article>
-                    <h3>Telemetry Operating Model</h3>
-                    <p class="meta">TechScale · 2023</p>
-                    <p>Rolled out unified metrics, tracing, and logging for 200 services with actionable SLO dashboards and weekly reliability reviews.</p>
+                    <h3>FastAPI CRUD Service with Postgres</h3>
+                    <p class="meta"><a href="https://github.com/su-mangale/fast-api" target="_blank" rel="noopener">github.com/su-mangale/fast-api</a></p>
+                    <p>A production-ready FastAPI service with PostgreSQL, built to highlight DevContainer workflows, CI/CD, and secure Docker Compose deployment.</p>
                     <ul>
-                        <li>OpenTelemetry standardization</li>
-                        <li>Grafana playlists for exec visibility</li>
-                        <li>On-call playbooks tied to alerts</li>
+                        <li>Feature-complete CRUD endpoints powered by SQLAlchemy models and Alembic migrations.</li>
+                        <li>Dev Containers script the entire local environment, including database bootstrapping.</li>
+                        <li>Two Docker Compose profiles: hardened nginx reverse proxy path and a lightweight direct-run option.</li>
                     </ul>
                 </article>
                 <article>
-                    <h3>Compliance Automation Pipeline</h3>
-                    <p class="meta">CloudWorks · 2022</p>
-                    <p>Instrumented evidence collection and runtime checks to keep regulated workloads audit-ready without blocking releases.</p>
+                    <h3>MERN Stack Application</h3>
+                    <p class="meta"><a href="https://github.com/su-mangale/mern-stack" target="_blank" rel="noopener">github.com/su-mangale/mern-stack</a></p>
+                    <p>A minimal MongoDB, Express, React, and Node stack wired with Docker Compose to showcase container-first full-stack delivery.</p>
                     <ul>
-                        <li>Infrastructure scoring dashboard</li>
-                        <li>Automated drift remediation</li>
-                        <li>Live compliance reports for auditors</li>
+                        <li>Single command bootstrap (`docker compose up --build`) for API and client.</li>
+                        <li>Shared `.env` usage so the API connects to Mongo via `MONGO_URI` across environments.</li>
+                        <li>Documented local dev workflow with hot reload using npm scripts outside of containers.</li>
                     </ul>
                 </article>
             </div>
@@ -150,29 +150,33 @@
                 <p class="section-eyebrow">Experience</p>
                 <h2>Recent roles</h2>
             </header>
-            <ol class="timeline">
-                <li>
-                    <div class="time">2024 — Present</div>
+            <div class="experience-track">
+                <article class="experience-entry">
+                    <div class="time">2023 — Present</div>
                     <div class="details">
-                        <h3>Principal Platform Engineer · FinEdge</h3>
-                        <p>Leading platform strategy across 30 squads, focusing on developer self-service and production resiliency.</p>
+                        <h3>Infrastructure Engineer · Digital Network Solution (DNS)</h3>
+                        <p>Delivering platform engineering engagements across Nepal, building resilient Kubernetes foundations and automation-first operations for enterprise teams.</p>
+                        <div class="experience-points">
+                            <div class="experience-point">
+                                <span class="experience-point-marker" aria-hidden="true"></span>
+                                <p>Deployed Nutanix Kubernetes Platform clusters with high availability, multi-tenancy, and GitOps workflows through FluxCD.</p>
+                            </div>
+                            <div class="experience-point">
+                                <span class="experience-point-marker" aria-hidden="true"></span>
+                                <p>Implemented Nutanix Cloud Infrastructure and Velero-based protection to provide DR-ready private data centers for 10+ customers.</p>
+                            </div>
+                            <div class="experience-point">
+                                <span class="experience-point-marker" aria-hidden="true"></span>
+                                <p>Automated lifecycle management via RedHat Satellite and Insights, streamlining patching, upgrades, and compliance.</p>
+                            </div>
+                            <div class="experience-point">
+                                <span class="experience-point-marker" aria-hidden="true"></span>
+                                <p>Operationalized RedHat OpenShift with integrated object storage and Source-to-Image pipelines to accelerate application delivery.</p>
+                            </div>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <div class="time">2021 — 2024</div>
-                    <div class="details">
-                        <h3>Platform Lead · TechScale</h3>
-                        <p>Scaled Kubernetes foundation to 1,200 services, formalized SLO adoption, and automated release governance.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="time">2018 — 2021</div>
-                    <div class="details">
-                        <h3>Senior DevOps Engineer · CloudWorks</h3>
-                        <p>Built multi-cloud landing zones and introduced infrastructure-as-code standards adopted company-wide.</p>
-                    </div>
-                </li>
-            </ol>
+                </article>
+            </div>
         </section>
 
         <section class="skills" id="skills">
@@ -182,14 +186,18 @@
             </header>
             <div class="skill-grid">
                 <ul>
-                    <li>Internal Developer Platforms</li>
-                    <li>GitOps & Release Engineering</li>
-                    <li>Observability & SLOs</li>
+                    <li>Kubernetes Platform Engineering</li>
+                    <li>GitOps with FluxCD</li>
+                    <li>Nutanix Kubernetes Platform (NKP)</li>
+                    <li>Nutanix Cloud Infrastructure (NCI)</li>
+                    <li>Disaster Recovery Automation</li>
                 </ul>
                 <ul>
+                    <li>RedHat OpenShift Administration</li>
+                    <li>RedHat Satellite & Insights</li>
+                    <li>Velero Backup Orchestration</li>
+                    <li>Cloud-Native Security & Compliance</li>
                     <li>Infrastructure as Code</li>
-                    <li>Cloud Architecture (AWS/GCP/Azure)</li>
-                    <li>Incident Response Enablement</li>
                 </ul>
             </div>
         </section>

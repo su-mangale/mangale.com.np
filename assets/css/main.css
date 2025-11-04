@@ -320,6 +320,16 @@ h3 {
     font-size: 0.95rem;
 }
 
+.projects .meta a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.projects .meta a:hover,
+.projects .meta a:focus-visible {
+    color: var(--color-accent);
+}
+
 .impact .impact-grid {
     display: grid;
     gap: 18px;
@@ -334,14 +344,13 @@ h3 {
     gap: 10px;
 }
 
-.experience .timeline {
-    list-style: none;
-    display: grid;
-    gap: 24px;
+.experience-track {
     position: relative;
+    display: grid;
+    gap: 32px;
 }
 
-.experience .timeline::before {
+.experience-track::before {
     content: '';
     position: absolute;
     top: 6px;
@@ -351,7 +360,7 @@ h3 {
     background: rgba(43, 89, 255, 0.14);
 }
 
-.experience li {
+.experience-entry {
     display: grid;
     grid-template-columns: 120px 1fr;
     gap: 24px;
@@ -359,7 +368,7 @@ h3 {
     position: relative;
 }
 
-.experience li::before {
+.experience-entry::before {
     content: '';
     position: absolute;
     left: 6px;
@@ -370,13 +379,37 @@ h3 {
     background: var(--color-accent);
 }
 
-.experience .time {
+.experience-entry .time {
     font-weight: 600;
     color: var(--color-subtle);
 }
 
-.experience .details p {
+.experience-entry .details p {
     color: var(--color-muted);
+    margin-top: 8px;
+}
+
+.experience-points {
+    display: grid;
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.experience-point {
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    gap: 12px;
+    align-items: flex-start;
+    color: var(--color-muted);
+    line-height: 1.6;
+}
+
+.experience-point-marker {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-accent);
     margin-top: 8px;
 }
 
@@ -516,20 +549,20 @@ h3 {
 
 
 @media (max-width: 960px) {
-    .experience li {
+    .experience-entry {
         grid-template-columns: 1fr;
         gap: 12px;
     }
 
-    .experience .timeline::before {
+    .experience-track::before {
         left: 8px;
     }
 
-    .experience li {
+    .experience-entry {
         padding-left: 24px;
     }
 
-    .experience li::before {
+    .experience-entry::before {
         left: 0;
     }
 }
