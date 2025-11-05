@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <header class="header" id="top">
+        <div class="branding">
+            <span class="logo-dot"></span>
+            <div>
+                <p class="label">Mangale Lopchan</p>
+                <p class="sub-label">Platform Engineer</p>
+            </div>
+        </div>
+        <nav aria-label="primary navigation">
+            <a href="/#about">About</a>
+            <a href="/#achievements">Achievements</a>
+            <a href="/#highlights">Highlights</a>
+            <a href="/#projects">Projects</a>
+            <a href="/#experience">Experience</a>
+            <a href="/#contact">Contact</a>
+            <a href="/blog/">Blog</a>
+        </nav>
+        <div class="header-actions">
+            <a class="btn ghost" href="/assets/mangale-lopchan.pdf" download>Download resume</a>
+        </div>
+    </header>
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="current-year"></span> Mangale Lopchan. Built for clarity and momentum.</p>
+        <a class="back-to-top" href="#top">Back to top</a>
+    </footer>
+
+    <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

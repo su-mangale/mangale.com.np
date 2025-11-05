@@ -1,0 +1,13 @@
+{
+  "name": "mangale-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio site for Mangale Lopchan",
+  "scripts": {
+    "dev": "eleventy --serve --watch",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "luxon": "^3.4.4"
+  }
+}
