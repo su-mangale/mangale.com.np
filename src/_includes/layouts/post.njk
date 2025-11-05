@@ -6,7 +6,7 @@ footerBackButton:
 ---
 <section class="blog-post">
     <header class="blog-post-header">
-    <p class="section-eyebrow">{{ page.date | readableDate }}{% if readTime %} · {{ readTime }}{% endif %}</p>
+    <p class="section-eyebrow">{{ page.date | readableDate }}{% if readTime %} · {{ readTime }}{% endif %} · <span class="view-counter" data-view-key="{{ page.fileSlug }}" data-view-action="increment" aria-live="polite">Loading views…</span></p>
         <h1>{{ title }}</h1>
         {% if description %}
             <p class="section-body">{{ description }}</p>

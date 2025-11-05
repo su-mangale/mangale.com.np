@@ -21,7 +21,7 @@ footerBackButton:
         {% for post in collections.posts %}
             <article class="blog-timeline-item">
                 <div class="blog-card">
-                    <p class="blog-card-meta">{{ post.date | readableDate }}{% if post.data.readTime %} · {{ post.data.readTime }}{% endif %}</p>
+                    <p class="blog-card-meta">{{ post.date | readableDate }}{% if post.data.readTime %} · {{ post.data.readTime }}{% endif %} · <span class="view-counter" data-view-key="{{ post.data.page.fileSlug }}" aria-live="polite">Loading views…</span></p>
                     <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
                     <p class="blog-card-summary">{{ post.data.description or "Update coming soon." }}</p>
                     <a class="blog-card-link" href="{{ post.url | url }}">Read article</a>
