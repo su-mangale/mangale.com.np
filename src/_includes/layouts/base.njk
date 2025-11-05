@@ -10,27 +10,29 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-    <header class="header" id="top">
-        <div class="branding">
-            <span class="logo-dot"></span>
-            <div>
-                <p class="label">Mangale Lopchan</p>
-                <p class="sub-label">Platform Engineer</p>
+    {% if showNav != false %}
+        <header class="header" id="top">
+            <div class="branding">
+                <span class="logo-dot"></span>
+                <div>
+                    <p class="label">Mangale Lopchan</p>
+                    <p class="sub-label">Platform Engineer</p>
+                </div>
             </div>
-        </div>
-        <nav aria-label="primary navigation">
-            <a href="/#about">About</a>
-            <a href="/#achievements">Achievements</a>
-            <a href="/#highlights">Highlights</a>
-            <a href="/#projects">Projects</a>
-            <a href="/#experience">Experience</a>
-            <a href="/#contact">Contact</a>
-            <a href="/blog/">Blog</a>
-        </nav>
-        <div class="header-actions">
-            <a class="btn ghost" href="/assets/mangale-lopchan.pdf" download>Download resume</a>
-        </div>
-    </header>
+            <nav aria-label="primary navigation">
+                <a href="/#about">About</a>
+                <a href="/#achievements">Achievements</a>
+                <a href="/#highlights">Highlights</a>
+                <a href="/#projects">Projects</a>
+                <a href="/#experience">Experience</a>
+                <a href="/#contact">Contact</a>
+                <a href="/blogs/">Blogs</a>
+            </nav>
+            <div class="header-actions">
+                <a class="btn ghost" href="/assets/mangale-lopchan.pdf" download>Download resume</a>
+            </div>
+        </header>
+    {% endif %}
 
     <main>
         {{ content | safe }}
@@ -38,7 +40,12 @@
 
     <footer class="footer">
         <p>© <span id="current-year"></span> Mangale Lopchan. Built for clarity and momentum.</p>
-        <a class="back-to-top" href="#top">Back to top</a>
+        <div class="footer-actions">
+            {% if footerBackButton %}
+                <a href="{{ footerBackButton.href }}">{{ footerBackButton.label }}</a>
+            {% endif %}
+            <a class="back-to-top" href="#top">Back to top</a>
+        </div>
     </footer>
 
     <script src="/assets/js/main.js" defer></script>

@@ -5,9 +5,9 @@ Portfolio site for Mangale Lopchan, now powered by [Eleventy](https://www.11ty.d
 ## Features
 
 - ⚙️ Minimalist platform-engineering portfolio with reusable Eleventy layouts
-- 📝 Markdown-driven blog (`src/blog/YYYY-MM-DD-slug.md`) rendered automatically at `/blog`
+- 📝 Markdown-driven blog (`src/blogs/posts/YYYY-MM-DD-slug.md`) rendered automatically at `/blogs`
 - 🎨 Custom CSS/JS carried over from the original static build
-- � Zero runtime dependencies at deploy time—static pages suitable for GitHub Pages, Netlify, etc.
+- Zero runtime dependencies at deploy time—static pages suitable for GitHub Pages, Netlify, etc.
 
 ## Local Development
 
@@ -21,17 +21,18 @@ npm run build        # outputs the site into _site/
 
 ### Adding a blog post
 
-1. Copy the example post in `src/blog/` and rename it with the date prefix you want, e.g. `2025-12-01-sre-playbook.md`.
+1. Copy the example post in `src/blogs/posts/` and rename it with the date prefix you want, e.g. `2025-12-01-sre-playbook.md`.
 2. Update the front matter:
 	```markdown
 	---
 	title: "Observability Playbook"
 	description: "Rolling out Grafana dashboards with actionable SLOs."
 	date: 2025-12-01
+	readTime: "5 min read"
 	published: true
 	---
 	```
-3. Write in Markdown below the front matter. Commit and push—the build will pick it up and emit `/blog/observability-playbook/` and update `/blog` listing automatically.
+3. Write in Markdown below the front matter (update `readTime` with your estimate). Commit and push—the build will pick it up and emit `/blogs/observability-playbook/` and update `/blogs` listing automatically.
 
 ## Deployment
 

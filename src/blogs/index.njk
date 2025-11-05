@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: Blogs · Mangale Lopchan
+permalink: /blogs/index.html
+eleventyExcludeFromCollections: true
+tags: []
+showNav: false
+footerBackButton:
+  label: Back to portfolio
+  href: /
+---
+<section class="blog-hero">
+    <header>
+    <p class="section-eyebrow">Blogs</p>
+    <h1>Notes from the platform trenches</h1>
+        <p class="section-body">Ideas, implementation lessons, and GitOps experiments published as Markdown from this repository.</p>
+    </header>
+</section>
+<section class="blog-timeline" aria-label="Blog posts timeline">
+    {% if collections.posts | length %}
+        {% for post in collections.posts %}
+            <article class="blog-timeline-item">
+                <div class="blog-card">
+                    <p class="blog-card-meta">{{ post.date | readableDate }}{% if post.data.readTime %} · {{ post.data.readTime }}{% endif %}</p>
+                    <h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2>
+                    <p class="blog-card-summary">{{ post.data.description or "Update coming soon." }}</p>
+                    <a class="blog-card-link" href="{{ post.url | url }}">Read article</a>
+                </div>
+            </article>
+        {% endfor %}
+    {% else %}
+        <article class="blog-timeline-item">
+            <div class="blog-card empty">
+                <p class="blog-card-summary">No posts yet. Add a Markdown file under <code>src/blogs/posts/</code> with front matter to publish.</p>
+            </div>
+        </article>
+    {% endif %}
+</section>

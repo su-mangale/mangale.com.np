@@ -1,0 +1,8 @@
+{
+  "layout": "post.njk",
+  "permalink": "blogs/{{ page.fileSlug }}/",
+  "tags": [
+    "posts"
+  ],
+  "showNav": false
+}

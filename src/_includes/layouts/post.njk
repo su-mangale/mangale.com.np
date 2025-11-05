@@ -1,8 +1,12 @@
+---
 layout: base.njk
+footerBackButton:
+    label: Back to all posts
+    href: /blogs/
 ---
 <section class="blog-post">
     <header class="blog-post-header">
-        <p class="section-eyebrow">{{ page.date | readableDate }}</p>
+    <p class="section-eyebrow">{{ page.date | readableDate }}{% if readTime %} · {{ readTime }}{% endif %}</p>
         <h1>{{ title }}</h1>
         {% if description %}
             <p class="section-body">{{ description }}</p>
